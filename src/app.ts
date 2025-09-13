@@ -5,7 +5,7 @@ declare global {
 globalThis.count ??= 0;
 globalThis.count++;
 
-const PORT = process.env.PORT || 3000;
+const PORT = Bun.env.PORT || 3000;
 
 const app = Bun.serve({
   port: PORT,
